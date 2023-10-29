@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-Shop</title>
+        <link rel="stylesheet" href="./src/css/aos.css" />
+        <link rel="stylesheet" href="./src/css/style.en-US.css" />
+    </head>
+
+    <body>
+        <header class="main-header">
+            <div class="main-header__top">
+                <div
+                    class="container d-flex justify-content-center align-items-center"
+                >
+                    <p class="main-header__top-text text-white m-0 mx-3">
+                        Set your location and language to prioritise localised
+                        information.
+                    </p>
+                    <button
+                        class="button button--secondary button--radius button--raised button--sm mx-2"
+                    >
+                        Continue
+                    </button>
+                    <button
+                        class="button button--secondary button--radius button--raised button--sm mx-2"
+                    >
+                        Continue
+                    </button>
+                    <button
+                        class="button button--secondary button--radius button--raised button--sm mx-2"
+                    >
+                        Continue
+                    </button>
+                </div>
+            </div>
+            <nav class="main-header__nav container-fluid">
+                <div class="main-header__nav-wrapper">
+                    <div class="main-header__nav-logo">
+                        <img src="./src/images/logo.svg" alt="Logo" srcset="" />
+                    </div>
+                    <div class="main-header__nav-search">
+                        <button
+                            class="button button--transparent button--dropdown"
+                        >
+                            <span>Software</span>
+                            <svg
+                                height="60"
+                                viewBox="0 -960 960 960"
+                                width="60"
+                            >
+                                <path
+                                    d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"
+                                />
+                            </svg>
+                        </button>
+                        <input
+                            type="text"
+                            class=""
+                            placeholder="Search here ..."
+                        />
+                        <button class="button button--icon button--dark">
+                            <svg
+                                width="50"
+                                height="40"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                            >
+                                <circle
+                                    cx="7"
+                                    cy="7"
+                                    r="6"
+                                    stroke="white"
+                                    stroke-width="2"
+                                />
+                                <path
+                                    d="M11 11L15 15"
+                                    stroke="white"
+                                    stroke-width="2"
+                                />
+                            </svg>
+
+                            <span>Search</span>
+                        </button>
+                    </div>
+                    <div class="main-header__nav-btn">
+                        <button
+                            class="button button--transparent button--md button--radius button--outline"
+                        >
+                            Login
+                        </button>
+                        <button
+                            class="button button--primary button--md button--radius button--"
+                        >
+                            Free sign up
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="l-home l-home--light-blue">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="l-home-video">
+                                <video
+                                    width="562"
+                                    playsinline
+                                    loop
+                                    autoplay
+                                    poster="./src/images/hero-poster.webp"
+                                >
+                                    <source
+                                        src="./src/images/hero.webm"
+                                        type="video/webm"
+                                    />
+                                    <source
+                                        src="./src/images/hero.mp4"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                            </div>
+                            <div class="l-home-media-txt">
+                                <span class="">Architecture</span
+                                ><span class="">Engineering</span
+                                ><span class="">Construction</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-md-6 d-flex flex-column justify-content-evenly"
+                        >
+                            <h2 class="typo-title typo-primary-light mb-4">
+                                BIM objects for everyone.
+                            </h2>
+                            <p class="typo-body1 typo-primary-light mb-2">
+                                We provide you with the information and
+                                inspiration you need to design buildings faster,
+                                smarter and greener.
+                            </p>
+                            <button
+                                class="button button--block button--primary button--radius"
+                            >
+                                Free sign up
+                            </button>
+                            <button
+                                class="button button--block button--transparent"
+                            >
+                                Publish your products
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-home l-home--secondary">
+                <div class="container-fluid">
+                    <div class="align-items-start d-flex mb-3">
+                        <img
+                            class="section-title__icon"
+                            src="./src/images/icons/category-icon.svg"
+                            alt="category"
+                        />
+                        <div>
+                            <div class="section-title">
+                                <h2 class="section-title__head">Categories</h2>
+                                <img
+                                    class="section-title__arrow"
+                                    src="./src/images/icons/arrow-right-black.svg"
+                                    alt="arrow-right"
+                                />
+                            </div>
+                            <p class="section-title__caption">
+                                Browse all building product categories
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cat-slider-container">
+                        <article
+                            class="cat-slider swiper-container"
+                            id="catSlider"
+                        >
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide cat-slider__item">
+                                    <a class="l-box l-box--link" href="#">
+                                        <img
+                                            class="l-box__img"
+                                            src="./src/images/icons/furniture.svg"
+                                            alt="Categories"
+                                        />
+                                        <p
+                                            class="l-box__text l-box__text--primary"
+                                        >
+                                            Doors
+                                        </p>
+                                        <button
+                                            class="button button--rounded button--xs button--icon button--secondary"
+                                        >
+                                            <svg
+                                                height="18"
+                                                viewBox="0 -960 960 960"
+                                                width="18"
+                                            >
+                                                <path
+                                                    d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                                />
+                                            </svg>
+                                            <span>Follow</span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide cat-slider__item">
+                                    <a class="l-box l-box--link" href="#">
+                                        <img
+                                            class="l-box__img"
+                                            src="./src/images/icons/furniture.svg"
+                                            alt="Categories"
+                                        />
+                                        <p
+                                            class="l-box__text l-box__text--primary"
+                                        >
+                                            Doors
+                                        </p>
+                                        <button
+                                            class="button button--rounded button--xs button--icon button--secondary"
+                                        >
+                                            <svg
+                                                height="18"
+                                                viewBox="0 -960 960 960"
+                                                width="18"
+                                            >
+                                                <path
+                                                    d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                                />
+                                            </svg>
+                                            <span>Follow</span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide cat-slider__item">
+                                    <a class="l-box l-box--link" href="#">
+                                        <img
+                                            class="l-box__img"
+                                            src="./src/images/icons/furniture.svg"
+                                            alt="Categories"
+                                        />
+                                        <p
+                                            class="l-box__text l-box__text--primary"
+                                        >
+                                            Doors
+                                        </p>
+                                        <button
+                                            class="button button--rounded button--xs button--icon button--secondary"
+                                        >
+                                            <svg
+                                                height="18"
+                                                viewBox="0 -960 960 960"
+                                                width="18"
+                                            >
+                                                <path
+                                                    d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                                />
+                                            </svg>
+                                            <span>Follow</span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide cat-slider__item">
+                                    <a class="l-box l-box--link" href="#">
+                                        <img
+                                            class="l-box__img"
+                                            src="./src/images/icons/furniture.svg"
+                                            alt="Categories"
+                                        />
+                                        <p
+                                            class="l-box__text l-box__text--primary"
+                                        >
+                                            Doors
+                                        </p>
+                                        <button
+                                            class="button button--rounded button--xs button--icon button--secondary"
+                                        >
+                                            <svg
+                                                height="18"
+                                                viewBox="0 -960 960 960"
+                                                width="18"
+                                            >
+                                                <path
+                                                    d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                                />
+                                            </svg>
+                                            <span>Follow</span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide cat-slider__item">
+                                    <a class="l-box l-box--link" href="#">
+                                        <img
+                                            class="l-box__img"
+                                            src="./src/images/icons/furniture.svg"
+                                            alt="Categories"
+                                        />
+                                        <p
+                                            class="l-box__text l-box__text--primary"
+                                        >
+                                            Doors
+                                        </p>
+                                        <button
+                                            class="button button--rounded button--xs button--icon button--secondary"
+                                        >
+                                            <svg
+                                                height="18"
+                                                viewBox="0 -960 960 960"
+                                                width="18"
+                                            >
+                                                <path
+                                                    d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                                />
+                                            </svg>
+                                            <span>Follow</span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide cat-slider__item">
+                                    <a class="l-box l-box--link" href="#">
+                                        <img
+                                            class="l-box__img"
+                                            src="./src/images/icons/furniture.svg"
+                                            alt="Categories"
+                                        />
+                                        <p
+                                            class="l-box__text l-box__text--primary"
+                                        >
+                                            Doors
+                                        </p>
+                                        <button
+                                            class="button button--rounded button--xs button--icon button--secondary"
+                                        >
+                                            <svg
+                                                height="18"
+                                                viewBox="0 -960 960 960"
+                                                width="18"
+                                            >
+                                                <path
+                                                    d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                                />
+                                            </svg>
+                                            <span>Follow</span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide cat-slider__item">
+                                    <a class="l-box l-box--link" href="#">
+                                        <img
+                                            class="l-box__img"
+                                            src="./src/images/icons/furniture.svg"
+                                            alt="Categories"
+                                        />
+                                        <p
+                                            class="l-box__text l-box__text--primary"
+                                        >
+                                            Doors
+                                        </p>
+                                        <button
+                                            class="button button--rounded button--xs button--icon button--secondary"
+                                        >
+                                            <svg
+                                                height="18"
+                                                viewBox="0 -960 960 960"
+                                                width="18"
+                                            >
+                                                <path
+                                                    d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                                />
+                                            </svg>
+                                            <span>Follow</span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide cat-slider__item">
+                                    <a class="l-box l-box--link" href="#">
+                                        <img
+                                            class="l-box__img"
+                                            src="./src/images/icons/furniture.svg"
+                                            alt="Categories"
+                                        />
+                                        <p
+                                            class="l-box__text l-box__text--primary"
+                                        >
+                                            Doors
+                                        </p>
+                                        <button
+                                            class="button button--rounded button--xs button--icon button--secondary"
+                                        >
+                                            <svg
+                                                height="18"
+                                                viewBox="0 -960 960 960"
+                                                width="18"
+                                            >
+                                                <path
+                                                    d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                                />
+                                            </svg>
+                                            <span>Follow</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-home l-home--purble">
+                <div class="container-fluid">
+                    <div class="section-title">
+                        <h2 class="section-title__head">Brands</h2>
+                        <img
+                            class="section-title__arrow"
+                            src="./src/images/icons/arrow-right-black.svg"
+                            alt="arrow-right"
+                        />
+                    </div>
+                    <p class="section-title__caption mb-3">
+                        Browse all building product brands
+                    </p>
+
+                    <div class="l-flex">
+                        <div class="l-flex__8">
+                            <div class="l-card l-card--shadow">
+                                <div
+                                    class="l-card__img l-card__img--shadow-blue"
+                                >
+                                    <img
+                                        src="./src/images/brand1.webp"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <button
+                                        class="button button--rounded button--xs button--icon button--secondary"
+                                    >
+                                        <svg
+                                            height="18"
+                                            viewBox="0 -960 960 960"
+                                            width="18"
+                                        >
+                                            <path
+                                                d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                            />
+                                        </svg>
+                                        <span>Follow</span>
+                                    </button>
+                                    <h3 class="l-card__text">
+                                        <a href="#">Karl Andersson & Söner</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-flex__8">
+                            <div class="l-card l-card--shadow">
+                                <div
+                                    class="l-card__img l-card__img--shadow-blue"
+                                >
+                                    <img
+                                        src="./src/images/brand2.webp"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <button
+                                        class="button button--rounded button--xs button--icon button--secondary"
+                                    >
+                                        <svg
+                                            height="18"
+                                            viewBox="0 -960 960 960"
+                                            width="18"
+                                        >
+                                            <path
+                                                d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                            />
+                                        </svg>
+                                        <span>Follow</span>
+                                    </button>
+                                    <h3 class="l-card__text">
+                                        <a href="#">Karl Andersson & Söner</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-flex__8">
+                            <div class="l-card l-card--shadow">
+                                <div
+                                    class="l-card__img l-card__img--shadow-blue"
+                                >
+                                    <img
+                                        src="./src/images/brand1.webp"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <button
+                                        class="button button--rounded button--xs button--icon button--secondary"
+                                    >
+                                        <svg
+                                            height="18"
+                                            viewBox="0 -960 960 960"
+                                            width="18"
+                                        >
+                                            <path
+                                                d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                            />
+                                        </svg>
+                                        <span>Follow</span>
+                                    </button>
+                                    <h3 class="l-card__text">
+                                        <a href="#">Karl Andersson & Söner</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-flex__8">
+                            <div class="l-card l-card--shadow">
+                                <div
+                                    class="l-card__img l-card__img--shadow-blue"
+                                >
+                                    <img
+                                        src="./src/images/brand2.webp"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <button
+                                        class="button button--rounded button--xs button--icon button--secondary"
+                                    >
+                                        <svg
+                                            height="18"
+                                            viewBox="0 -960 960 960"
+                                            width="18"
+                                        >
+                                            <path
+                                                d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                            />
+                                        </svg>
+                                        <span>Follow</span>
+                                    </button>
+                                    <h3 class="l-card__text">
+                                        <a href="#">Karl Andersson & Söner</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-flex__8">
+                            <div class="l-card l-card--shadow">
+                                <div
+                                    class="l-card__img l-card__img--shadow-blue"
+                                >
+                                    <img
+                                        src="./src/images/brand1.webp"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <button
+                                        class="button button--rounded button--xs button--icon button--secondary"
+                                    >
+                                        <svg
+                                            height="18"
+                                            viewBox="0 -960 960 960"
+                                            width="18"
+                                        >
+                                            <path
+                                                d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                            />
+                                        </svg>
+                                        <span>Follow</span>
+                                    </button>
+                                    <h3 class="l-card__text">
+                                        <a href="#">Karl Andersson & Söner</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-flex__8">
+                            <div class="l-card l-card--shadow">
+                                <div
+                                    class="l-card__img l-card__img--shadow-blue"
+                                >
+                                    <img
+                                        src="./src/images/brand2.webp"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <button
+                                        class="button button--rounded button--xs button--icon button--secondary"
+                                    >
+                                        <svg
+                                            height="18"
+                                            viewBox="0 -960 960 960"
+                                            width="18"
+                                        >
+                                            <path
+                                                d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                            />
+                                        </svg>
+                                        <span>Follow</span>
+                                    </button>
+                                    <h3 class="l-card__text">
+                                        <a href="#">Karl Andersson & Söner</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-flex__8">
+                            <div class="l-card l-card--shadow">
+                                <div
+                                    class="l-card__img l-card__img--shadow-blue"
+                                >
+                                    <img
+                                        src="./src/images/brand1.webp"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <button
+                                        class="button button--rounded button--xs button--icon button--secondary"
+                                    >
+                                        <svg
+                                            height="18"
+                                            viewBox="0 -960 960 960"
+                                            width="18"
+                                        >
+                                            <path
+                                                d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                            />
+                                        </svg>
+                                        <span>Follow</span>
+                                    </button>
+                                    <h3 class="l-card__text">
+                                        <a href="#">Karl Andersson & Söner</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-flex__8">
+                            <div class="l-card l-card--shadow">
+                                <div
+                                    class="l-card__img l-card__img--shadow-blue"
+                                >
+                                    <img
+                                        src="./src/images/brand2.webp"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <button
+                                        class="button button--rounded button--xs button--icon button--secondary"
+                                    >
+                                        <svg
+                                            height="18"
+                                            viewBox="0 -960 960 960"
+                                            width="18"
+                                        >
+                                            <path
+                                                d="M450-200v-250H200v-60h250v-250h60v250h250v60H510v250h-60Z"
+                                            />
+                                        </svg>
+                                        <span>Follow</span>
+                                    </button>
+                                    <h3 class="l-card__text">
+                                        <a href="#">Karl Andersson & Söner</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-home">
+                <div class="container-fluid">
+                    <div class="section-title">
+                        <h2 class="section-title__head">Trending products</h2>
+                        <img
+                            class="section-title__arrow"
+                            src="./src/images/icons/arrow-right-black.svg"
+                            alt="arrow-right"
+                        />
+                    </div>
+                    <p class="section-title__caption mb-3">
+                        Browse all trending products
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product1.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product2.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product3.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product1.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product3.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product2.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-home">
+                <div class="container-fluid">
+                    <div class="section-title">
+                        <h2 class="section-title__head">New products</h2>
+                        <img
+                            class="section-title__arrow"
+                            src="./src/images/icons/arrow-right-black.svg"
+                            alt="arrow-right"
+                        />
+                    </div>
+                    <p class="section-title__caption mb-3">
+                        Browse all new products
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product1.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product2.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product3.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product1.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product3.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/product2.png"
+                                        alt="Brand1"
+                                    />
+                                </div>
+                                <div class="l-card__content">
+                                    <span class="l-card__caption"
+                                        >Fritz Hansen</span
+                                    >
+                                    <h3 class="l-card__text">
+                                        <a href="#"
+                                            >Alphabet Sofa™ Series PL300-3</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--block button--secondary button--radius"
+                                    >
+                                        Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-home l-home--secondary-light">
+                <div class="container-fluid">
+                    <div class="align-items-start d-flex mb-3">
+                        <img
+                            class="section-title__icon"
+                            src="./src/images/icons/collections-white.svg"
+                            alt="category"
+                        />
+                        <div>
+                            <div class="section-title">
+                                <h2 class="section-title__head">Collections</h2>
+                                <img
+                                    class="section-title__arrow"
+                                    src="./src/images/icons/arrow-right-black.svg"
+                                    alt="arrow-right"
+                                />
+                            </div>
+                            <p class="section-title__caption">
+                                Curated content for your project
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/collections2.png"
+                                        alt="Brand1"
+                                    />
+                                    <div class="l-card__img__span1">
+                                        promoted
+                                    </div>
+
+                                    <div class="l-card__img__span2">
+                                        <img
+                                            src="./src/images/icons/configure-icon.svg"
+                                            alt="configure-icon"
+                                            srcset=""
+                                        />
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                                <div class="l-card__content">
+                                    <h3 class="l-card__title">
+                                        <a href="#"
+                                            >Textile - Fabric Textile by Tayuh
+                                            the textile industry</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--secondary button--radius"
+                                    >
+                                        Add to project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/collections1.png"
+                                        alt="Brand1"
+                                    />
+                                    <div class="l-card__img__span1">
+                                        promoted
+                                    </div>
+
+                                    <div class="l-card__img__span2">
+                                        <img
+                                            src="./src/images/icons/configure-icon.svg"
+                                            alt="configure-icon"
+                                            srcset=""
+                                        />
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                                <div class="l-card__content">
+                                    <h3 class="l-card__title">
+                                        <a href="#"
+                                            >Textile - Fabric Textile by Tayuh
+                                            the textile industry</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--secondary button--radius"
+                                    >
+                                        Add to project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/collections2.png"
+                                        alt="Brand1"
+                                    />
+                                    <div class="l-card__img__span1">
+                                        promoted
+                                    </div>
+
+                                    <div class="l-card__img__span2">
+                                        <img
+                                            src="./src/images/icons/configure-icon.svg"
+                                            alt="configure-icon"
+                                            srcset=""
+                                        />
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                                <div class="l-card__content">
+                                    <h3 class="l-card__title">
+                                        <a href="#"
+                                            >Textile - Fabric Textile by Tayuh
+                                            the textile industry</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--secondary button--radius"
+                                    >
+                                        Add to project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="l-card">
+                                <div class="l-card__img l-card__img--bg-grey">
+                                    <img
+                                        src="./src/images/collections1.png"
+                                        alt="Brand1"
+                                    />
+                                    <div class="l-card__img__span1">
+                                        promoted
+                                    </div>
+
+                                    <div class="l-card__img__span2">
+                                        <img
+                                            src="./src/images/icons/configure-icon.svg"
+                                            alt="configure-icon"
+                                            srcset=""
+                                        />
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                                <div class="l-card__content">
+                                    <h3 class="l-card__title">
+                                        <a href="#"
+                                            >Textile - Fabric Textile by Tayuh
+                                            the textile industry</a
+                                        >
+                                    </h3>
+                                    <button
+                                        class="button button--secondary button--radius"
+                                    >
+                                        Add to project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-home l-home--rose">
+                <div class="container-fluid px-5 pt-5">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <img
+                                src="./src/images/additional-content-signup-min.webp"
+                                alt="additional-content-signup"
+                                srcset=""
+                            />
+                        </div>
+                        <div class="col-md-5 d-flex align-items-center">
+                            <h2 class="typo-primary-light mb-4 typo-headline">
+                                Download free high-quality BIM objects for any
+                                design software. Create your account today.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid px-5 pt-5">
+                    <div class="row justify-content-between">
+                        <div class="col-md-5 d-flex align-items-center">
+                            <h2 class="typo-primary-light mb-4 typo-headline">
+                                Have questions? Get straight answers from
+                                manufacturers with just a click.
+                            </h2>
+                        </div>
+                        <div class="col-md-6">
+                            <img
+                                src="./src/images/additional-content-communication-min.webp"
+                                alt="additional-content-signup"
+                                srcset=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="l-home l-home--secondary">
+                <div class="container-fluid p-5">
+                    <div class="row justify-content-between">
+                        <div
+                            class="col-md-5 d-flex flex-column justify-content-center"
+                        >
+                            <h2 class="typo-title typo-primary-light mb-4">
+                                You are in good company.
+                            </h2>
+                            <p class="typo-body1 typo-primary-light mb-3">
+                                We are honored to have 100 of the world's top
+                                100 architectural firms on BIMobject.
+                            </p>
+                            <button
+                                class="button button--block button--primary button--radius"
+                            >
+                                Free sign up
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img
+                                class="w-100"
+                                src="./src/images/good-company-desktop.webp"
+                                alt="good-company"
+                                srcset=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="l-home l-home--black main-footer">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="main-footer__links">
+                                    <h4>For designers</h4>
+                                    <ul class="">
+                                        <li>
+                                            <a href="">Search for products</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="main-footer__links">
+                                    <h4>For Manufacturers</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Overview</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">What we do</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">What is BIM?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">How it works</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="main-footer__links">
+                                    <h4>For Manufacturers</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Overview</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">What we do</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">What is BIM?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">How it works</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="main-footer__links">
+                                    <h4>For Manufacturers</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Overview</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">What we do</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">What is BIM?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">How it works</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="row justify-content-between">
+                    <div class="col-md-4">
+                        <img
+                            src="./src/images/BIMobject-logo-white.svg"
+                            alt="BIMobject logo"
+                            width="148"
+                            height="23"
+                            class="main-footer__logo"
+                        />
+                        <span class="main-footer__copyright"
+                            >© Copyright 2023. All Rights Reserved.
+                        </span>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-footer__socials">
+                            <div class="main-footer__icon">
+                                <a
+                                    href="https://www.facebook.com/BIMobject/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><img
+                                        src="./src/images/icons/facebook.svg"
+                                        alt="Facebook"
+                                        width="36"
+                                        height="36"
+                                /></a>
+                            </div>
+                            <div class="main-footer__icon">
+                                <a
+                                    href="https://www.linkedin.com/company/bimobject/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><img
+                                        src="./src/images/icons/linkedin.svg"
+                                        alt="Linkedin"
+                                        width="36"
+                                        height="36"
+                                /></a>
+                            </div>
+                            <div class="main-footer__icon">
+                                <a
+                                    href="https://www.pinterest.se/bimobject/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><img
+                                        src="./src/images/icons/pinterest.svg"
+                                        alt="Pinterest"
+                                        width="36"
+                                        height="36"
+                                /></a>
+                            </div>
+                            <div class="main-footer__icon">
+                                <a
+                                    href="https://twitter.com/BIMobject"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><img
+                                        src="./src/images/icons/twitter.svg"
+                                        alt="Twitter"
+                                        width="36"
+                                        height="36"
+                                /></a>
+                            </div>
+                            <div class="main-footer__icon">
+                                <a
+                                    href="https://www.youtube.com/user/BIMobject"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><img
+                                        src="./src/images/icons/youtube.svg"
+                                        alt="Youtube"
+                                        width="36"
+                                        height="36"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- <script src="./src/scripts/bootstrap.min.js"></script> -->
+        <script src="./src/scripts/swiper.min.js"></script>
+        <script src="./src/scripts/aos.js"></script>
+        <script src="./src/scripts/scripts.js"></script>
+    </body>
+</html>

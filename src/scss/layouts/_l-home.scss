@@ -1,0 +1,156 @@
+.l-home {
+    padding: 3rem 0;
+    position: relative;
+
+    &--grey {
+        background-color: #b7cec7;
+    }
+    &--black {
+        background-color: $color-black;
+    }
+
+    &--dark-grey {
+        background-color: #2a2a2a;
+    }
+
+    &--light-blue {
+        background-color: $color-light-blue;
+    }
+    &--secondary {
+        background-color: $color-secondary;
+    }
+    &--rose {
+        background-color: $color-rose;
+    }
+    &--secondary-light {
+        background-color: $color-secondary-light;
+    }
+    &--purble {
+        background-color: #fdf8f2;
+    }
+}
+
+.l-home-bottom {
+    padding-bottom: 2.5rem;
+}
+.l-home-video {
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.l-home-media-txt {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $color-primary-light;
+    padding: 0 3rem;
+    span:nth-of-type(1) {
+        animation: color-change-1 11s infinite;
+    }
+    span:nth-of-type(2) {
+        animation: color-change-2 11s infinite;
+    }
+    span:nth-of-type(3) {
+        animation: color-change-3 11s infinite;
+    }
+}
+
+@keyframes color-change-1 {
+    0%,
+    1% {
+        color: #287153;
+    }
+    1%,
+    36% {
+        color: #0c482f;
+    }
+    38%,
+    100% {
+        color: #287153;
+    }
+}
+
+@keyframes color-change-2 {
+    0%,
+    36% {
+        color: #287153;
+    }
+    38%,
+    60% {
+        color: #0c482f;
+    }
+    62%,
+    100% {
+        color: #287153;
+    }
+}
+@keyframes color-change-3 {
+    0%,
+    60% {
+        color: #287153;
+    }
+    62%,
+    100% {
+        color: #287153;
+    }
+}
+
+.l-home-media {
+    background-color: $color-light;
+}
+
+.l-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    background-color: $color-white;
+    border-radius: 50px;
+    min-width: 200px;
+    overflow: hidden;
+    box-shadow: 0 0 12px #060f0c7a;
+    border: 1px solid transparent;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        border-color: $color-primary;
+        color: inherit;
+    }
+}
+
+.l-box__img {
+    width: 30px;
+    height: auto;
+}
+
+.l-box__text {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    font-weight: 500;
+
+    &--primary {
+        color: $color-primary;
+    }
+
+    &--grey {
+        color: $selection-color;
+    }
+}
+
+#catSlider.cat-slider {
+    .swiper-wrapper {
+        padding: 1rem 1rem;
+    }
+}
+
+.cat-slider-container {
+    padding: 0 4rem;
+    margin: auto;
+    width: 100%;
+}

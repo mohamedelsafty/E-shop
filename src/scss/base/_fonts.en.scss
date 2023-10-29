@@ -1,0 +1,43 @@
+﻿// Epilogue
+@font-face {
+    font-family: 'Epilogue';
+    src: local('?'),
+        url('#{$font-path}/Epilogue/static/Epilogue-Light.ttf')
+            format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: light;
+}
+
+// Epilogue
+@font-face {
+    font-family: 'Epilogue';
+    src: local('?'),
+        url('#{$font-path}/Epilogue/static/Epilogue-Regular.ttf')
+            format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+// Epilogue
+@font-face {
+    font-family: 'Epilogue';
+    src: local('?'),
+        url('#{$font-path}/Epilogue/static/Epilogue-SemiBold.ttf')
+            format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: bold;
+}
+
+// Epilogue
+@font-face {
+    font-family: 'Epilogue';
+    src: local('?'),
+        url('#{$font-path}/Epilogue/static/Epilogue-Bold.ttf')
+            format('truetype');
+    font-weight: 600;
+    font-style: bold;
+    font-display: swap;
+}

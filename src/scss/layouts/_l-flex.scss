@@ -1,0 +1,8 @@
+.l-flex {
+    display: flex;
+}
+
+.l-flex__8 {
+    flex: 0 0 auto;
+    width: calc(100% / 8);
+}

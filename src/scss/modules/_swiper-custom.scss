@@ -1,0 +1,26 @@
+.swiper-button-prev,
+.swiper-button-next {
+    opacity: 1;
+    visibility: visible;
+    background-color: $color-black;
+    color: $color-white;
+    background-size: 70%;
+    top: 70%;
+    width: 35px;
+    height: 35px;
+}
+
+.swiper-button-prev {
+    background-position-x: 5px;
+}
+
+.swiper-button-next {
+    background-position-x: 6px;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+    opacity: 0.8;
+    cursor: auto;
+    pointer-events: none;
+}

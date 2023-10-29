@@ -1,0 +1,48 @@
+.section-title {
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+    position: relative;
+    align-items: center;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.2;
+        margin-inline-end: 0.5rem;
+        color: $color-black;
+        @include transition();
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--between {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    @include breakpoint(isMobile) {
+        margin-bottom: 10px;
+    }
+}
+
+.section-title__caption {
+    font-size: rem(14);
+    color: #666;
+    font-weight: 400;
+    margin: 0;
+}
+
+.section-title__icon {
+    width: 35px;
+    margin-inline-end: 0.5rem;
+}
+.section-title__arrow {
+    width: 16px;
+    margin-inline-end: 0.5rem;
+}
